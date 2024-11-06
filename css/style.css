@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    background: transparent;
+    width: 370px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 50px auto;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pop-up-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all 0.3s ease;
+    color: #fdfdfd; /* Color when not focused */
+}
+
+/* Hide the label initially */
+.input-box input:focus + .pop-up-label,
+.input-box input:not(:placeholder-shown) + .pop-up-label {
+    top: -10px; /* Move the label up */
+    left: 5px;  /* Adjust left position */
+    color: rgb(255, 255, 255); /* Change color when focused */
+    font-size: 12px; /* Change font size */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+.input-box i {
+    position: absolute;
+    right: 3px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    margin: 15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow */
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.wrapper .btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Shadow on hover */
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+
+button  {
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+button:hover {
+    text-decoration: dashed;
+    color: rgb(232, 202, 29);
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px; /* Adjust as needed */
+    background-color: #ffffff; /* Light grey background */
+    width: 100%; /* Full width */
+    position: absolute; /* Not fixed or absolute */
+    bottom: 0; /* At the bottom of the page */
+    margin-top: 20px; /* Space above footer */
+}
+
+
+.homepage-body {
+    background-color: rgb(0, 0, 0); /* Set background to black */
+    color: rgb(224, 231, 121); /* Set default text color to white */
+    font-family: Arial, sans-serif; /* Set font for better readability */
+     background: #0f0f0f;
+}
+
+ 
+
+
+
+/* //new css */
+ body homepage-body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.fullscreen-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the image covers the full screen without stretching */
+    z-index: -1; /* Moves the image behind other content */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding: 15%;
+    color: #fff; /* Adjust text color to be visible over the image */
+}
+
+
